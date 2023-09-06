@@ -13,7 +13,10 @@ namespace Uppgift_1_2
             // Ändra textfärgen till vit
             Console.ForegroundColor = ConsoleColor.White;
 
-            Console.WriteLine("Någonting gick fel. Pröva starta om datorn.");
+            Console.WriteLine(
+                "An error has occurred. To continue:\n\nPress enter to return to Windows, or \n\nPress CTRL+ALT+DEL to restart your computer. If you do this, \nyou will lose any unsaved information in all open applications.\n\nError: 0e : 016F : BFF9B3D4\nPress any key to continue"
+            );
+            Console.ReadKey();
         }
     }
 }
